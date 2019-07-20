@@ -8,7 +8,7 @@ pipeline {
             post {
                 success {
                     echo 'Now Archiving...'
-                    archiveArtifacts artifacts: 'C:\Jenkins\workspace\package\webapp\target\*.war'
+                    archiveArtifacts artifacts: '**\target\*.war'
                 }
             }
         }
